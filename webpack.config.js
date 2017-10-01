@@ -37,10 +37,17 @@ module.exports = {
       { 
         test: /\.js(x)?$/, 
         exclude: /node_modules/,
-        use: ['react-hot-loader', 'babel-loader'] 
-        
+        use: ['react-hot-loader', 'babel-loader']
       }
-    ]
+    ],
+  },
+
+  resolve: {
+    alias: {
+      component: path.resolve(__dirname, './src/core/components'),
+      scss: path.resolve(__dirname, './src/core/style'),
+      image: path.resolve(__dirname, './src/core/style/assets/img')
+    }
   },
 
   plugins: [
