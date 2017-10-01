@@ -1,12 +1,22 @@
-import React, { Component } from 'react';
+import React, { PropTypes, Component } from 'react';
 import './style.scss';
 
-export default class Button extends Component {
+class Button extends Component {
 	render() {
 		return (
-			<button>
+			<button className="es-button btn btn-primary">
 				{this.props.title}
 			</button>
 		)
 	}
 }
+
+Button.propTypes = {
+	title: PropTypes.string
+}
+
+Button.defaultProps = {
+	title: 'Defaults'
+}
+
+export default Button;

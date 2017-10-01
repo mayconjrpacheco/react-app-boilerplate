@@ -22,7 +22,7 @@ module.exports = {
   module: {
     rules: [
       { test: /\.(png|svg|woff|woff2|ttf|eot)/, loader: 'file-loader' },
-      { test: /\.scss$/,
+      { test: /\.(css|scss)$/,
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },

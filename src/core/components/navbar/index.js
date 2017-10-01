@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './style.scss';
 
-export default class Navbar extends Component {
+class Navbar extends Component {
 	render() {
 		return (
-			<div className="navbar">
-			</div>
-		)
+			<nav className="es-navbar navbar-light bg-faded">
+  				<a className="navbar-brand" href="#">Navbar</a>
+			</nav>
+		);
 	}
 }
+
+export default Navbar;
