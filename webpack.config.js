@@ -46,7 +46,8 @@ module.exports = {
     alias: {
       component: path.resolve(__dirname, './src/core/components'),
       scss: path.resolve(__dirname, './src/core/style'),
-      image: path.resolve(__dirname, './src/core/style/assets/img')
+      image: path.resolve(__dirname, './src/core/style/assets/img'),
+      state: path.resolve(__dirname, './src/core/state')
     }
   },
 
